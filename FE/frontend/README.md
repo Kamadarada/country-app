@@ -1,98 +1,97 @@
 
 # Country Explorer
 
-Este é um projeto de **Country Explorer** que permite visualizar detalhes sobre diferentes países e suas fronteiras. A aplicação é construída com **Next.js** e **React**, utilizando uma API externa para buscar informações sobre os países. O projeto possui uma interface interativa que permite ao usuário pesquisar países, visualizar gráficos de população e explorar as fronteiras dos países clicando em links.
+This is a **Country Explorer** project that allows you to view details about different countries and their borders. The application is built with **Next.js** and **React**, using an external API to fetch country information. The project has an interactive interface that allows users to search for countries, view population charts, and explore country borders by clicking on links.
 
-## Estrutura do Projeto
+## Project Structure
 
-A estrutura de diretórios e arquivos é organizada da seguinte forma:
+The directory and file structure is organized as follows:
 
 ```
 /app
-  /country
     /[code]
       page.js
   /page.js
 /globals.css
 ```
 
-### Como Funciona:
+### How It Works:
 
-1. **Página Inicial (`/page.js`)**: Exibe uma lista de países com links para suas páginas de detalhes. Você pode buscar países por nome e filtrar os resultados.
+1. **Home Page (`/page.js`)**: Displays a list of countries with links to their detail pages. You can search countries by name and filter the results.
    
-2. **Página de Detalhes de País (`/country/[code]/page.js`)**: Cada país tem uma página dinâmica, acessível via código do país. Ela exibe o nome, bandeira, gráfico de população e uma lista de países fronteiriços clicáveis.
+2. **Country Detail Page (`/country/[code]/page.js`)**: Each country has a dynamic page accessible by its country code. It shows the country name, flag, population chart, and a list of clickable border countries.
 
-3. **Busca de Países**: A lista de países é buscada de uma API externa usando a URL configurada em `NEXT_PUBLIC_BACKEND_BASE_URL`. A busca é feita com base no nome do país.
+3. **Country Search**: The list of countries is fetched from an external API using the URL defined in `NEXT_PUBLIC_BACKEND_BASE_URL`. The search is based on the country's name.
 
-4. **Gráfico de População**: Um gráfico de linha é exibido com a população histórica do país.
+4. **Population Chart**: A line chart is displayed with the country's historical population.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Next.js**: Framework React para construção de sites e APIs.
-- **Axios**: Biblioteca para fazer requisições HTTP.
-- **Chart.js**: Biblioteca para exibir gráficos interativos.
-- **React Table**: Biblioteca para exibição de dados tabulares interativos.
-- **React Icons**: Para ícones usados na interface.
+- **Next.js**: React framework for building websites and APIs.
+- **Axios**: Library for making HTTP requests.
+- **Chart.js**: Library for displaying interactive charts.
+- **React Table**: Library for displaying interactive tabular data.
+- **React Icons**: For icons used in the interface.
 
-## Como Rodar o Projeto
+## How to Run the Project
 
-### 1. Clonar o Repositório
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/seu-usuario/country-explorer.git
+git clone https://github.com/your-username/country-explorer.git
 ```
 
-### 2. Instalar as Dependências
+### 2. Install Dependencies
 
-Navegue até a pasta do projeto e instale as dependências:
+Navigate to the project folder and install the dependencies:
 
 ```bash
 cd country-explorer
 npm install
 ```
 
-### 3. Configurar a URL da API
+### 3. Configure the API URL
 
-Crie um arquivo `.env.local` na raiz do projeto e configure a URL da API externa. Exemplo:
+Create a `.env.local` file at the root of the project and configure the external API URL. Example:
 
 ```
 NEXT_PUBLIC_BACKEND_BASE_URL=http://localhost:8080/api
 ```
 
-### 4. Rodar o Projeto
+### 4. Run the Project
 
-Após configurar o arquivo `.env.local`, inicie o servidor de desenvolvimento:
+After configuring the `.env.local` file, start the development server:
 
 ```bash
 npm run dev
 ```
 
-Acesse o projeto no seu navegador em `http://localhost:3000`.
+Access the project in your browser at `http://localhost:3000`.
 
-## Estrutura de Rotas
+## Route Structure
 
-- **Página inicial**: `http://localhost:3000/`
-- **Página de detalhes do país**: `http://localhost:3000/country/[code]`
-  - Exemplo: `http://localhost:3000/country/US`
+- **Home page**: `http://localhost:3000/`
+- **Country detail page**: `http://localhost:3000/[code]`
+  - Example: `http://localhost:3000/US`
 
-## Como Funciona a Navegação
+## How Navigation Works
 
-- **Página Inicial**: Exibe uma lista de países com a possibilidade de filtrá-los pela barra de busca.
-- **Página de Detalhes do País**: Mostra o nome do país, sua bandeira, o gráfico de população e uma tabela com as fronteiras do país. As fronteiras são links clicáveis que redirecionam para as páginas dos países vizinhos.
+- **Home Page**: Displays a list of countries with the ability to filter them by the search bar.
+- **Country Detail Page**: Shows the country's name, flag, population chart, and a table with the country's borders. The borders are clickable links that redirect to the pages of neighboring countries.
 
-## Contribuindo
+## Contributing
 
-Se você deseja contribuir com o projeto, faça um fork deste repositório e envie um pull request.
+If you want to contribute to the project, please fork this repository and submit a pull request.
 
-1. Faça um fork deste repositório.
-2. Crie uma branch (`git checkout -b feature/novidade`).
-3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
-4. Envie para a branch (`git push origin feature/novidade`).
-5. Envie um pull request.
+1. Fork this repository.
+2. Create a branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Submit a pull request.
 
-## Licença
+## License
 
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
 ---
 
