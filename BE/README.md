@@ -60,4 +60,4 @@ Start the backend server:
 npm run dev
 ```
 
-The server will be available at: `http://localhost:3000`
+The server will be available at: `http://localhost:8080`
